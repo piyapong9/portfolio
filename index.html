@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lendex – Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ─── CURSOR ─── -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ─── HERO SECTION ─── -->
+  <section class="hero" id="home">
+    <div class="hero__bg-text">PORTFOLIO</div>
+
+    <div class="hero__container">
+
+      <!-- LEFT: text -->
+      <div class="hero__content" data-animate="fade-up">
+        <div class="hero__greeting">
+          <span class="dot"></span>
+          PORTFOLIO
+        </div>
+        <h1 class="hero__title">
+          I'm <span class="highlight">Piyapong Kaowprapai</span>,<br>
+          <span class="outline-text">Designer</span><br>
+          &amp; Frontend Developer.
+        </h1>
+        <p class="hero__desc">
+          พอร์ตฟอลิโอส่วนตัวของผมครับ เป็นการรวบรวมงานออกแบบและพัฒนาเว็บไซต์ตามตำแหน่ง Frontend Developer ที่ผมทำในช่วงการเรียนที่ผ่านมา
+        </p>
+        <div class="hero__actions">
+          <a href="#works" class="btn btn--primary">View My Work</a>
+        </div>
+      </div>
+
+      <!-- RIGHT: image blob -->
+      <div class="hero__visual" data-animate="fade-left">
+        <div class="hero__blob-wrap">
+          <svg class="hero__blob" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <clipPath id="blobClip">
+                <path id="blobPath"
+                  d="M318,280Q264,360,180,354Q96,348,54,274Q12,200,60,128Q108,56,192,52Q276,48,326,124Q376,200,318,280Z"/>
+              </clipPath>
+              <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#c8ff00"/>
+                <stop offset="100%" stop-color="#7fff00"/>
+              </linearGradient>
+            </defs>
+            <!-- blob bg -->
+            <path d="M318,280Q264,360,180,354Q96,348,54,274Q12,200,60,128Q108,56,192,52Q276,48,326,124Q376,200,318,280Z"
+              fill="url(#heroGrad)" opacity="0.15"/>
+            <!-- photo placeholder -->
+            <image href="https://cdn.phototourl.com/free/2026-03-26-5ae16e84-b8ce-4024-8f58-69568ab056fe.jpg"
+              x="0" y="0" width="400" height="600"
+              clip-path="url(#blobClip)"
+              preserveAspectRatio="xMidYMid meet"/>
+          </svg>
+
+          <!-- floating badge -->
+          <div class="hero__badge hero__badge--tl">
+            <span class="badge-icon">✦</span>
+            UI Design
+          </div>
+          <div class="hero__badge hero__badge--br">
+            <span class="badge-icon">◈</span>
+            Web Dev
+          </div>
+        </div>
+
+        <!-- scroll hint -->
+        <div class="scroll-hint">
+          <span>Scroll</span>
+          <div class="scroll-line"><div class="scroll-line__inner"></div></div>
+        </div>
+      </div>
+
+    </div><!-- /hero__container -->
+  </section>
+
+  <!-- ─── MARQUEE STRIP ─── -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>UI Design</span><span class="sep">✦</span>
+      <span>Web Development</span><span class="sep">✦</span>
+      <span>Motion Design</span><span class="sep">✦</span>
+    </div>
+  </div>
+
+  <!-- ─── ABOUT SECTION ─── -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__left" data-animate="fade-right">
+          <div class="section-label">About Me</div>
+          <h2 class="section-title">Working with purpose,<br>building with passion.</h2>
+          <p class="about__text">
+            เรียนอยู่ที่คณะศิลปศาสตร์และวิทยาศาสตร์ สาขาวิชาเทคโนลียีสารสนเทศ (IT) มหาวิทยาลัยเกษตรศาสตร์ วิทยาเขตกำแพงแสน มีความสนใจในด้านการออกแบบและพัฒนาเว็บไซต์ โดยเฉพาะในตำแหน่ง Frontend Developer ที่ผมได้เรียนรู้และฝึกฝนมาตลอดระยะเวลาการศึกษา
+          </p>
+          <p class="about__text">
+            ผมพร้อมที่จะเรียนรู้ทักษะใหม่ๆและเติบโตในสายงาน Development และมุ่งมั่นที่จะสร้างสรรค์ผลงานที่มีคุณภาพ
+          </p>
+        </div>
+
+        <div class="about__right" data-animate="fade-left">
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-item__header">
+                <span>UI / UX Design</span><span>50%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-bar__fill" data-width="50"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item__header">
+                <span>Front-End Development</span><span>60%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-bar__fill" data-width="60"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item__header">
+                <span>Motion Design</span><span>30%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-bar__fill" data-width="30"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SERVICES SECTION ─── -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <div class="section-label">What I Do</div>
+        <h2 class="section-title">MY<br>SKILLS.</h2>
+      </div>
+
+      <div class="services__grid">
+        <div class="service-card" data-animate="fade-up" data-delay="0">
+          <div class="service-card__icon">◈</div>
+          <h3 class="service-card__title">UI / UX Design</h3>
+          <p class="service-card__desc">Figma ออกแบบ</p>
+          <span class="service-card__num">01</span>
+        </div>
+        <div class="service-card" data-animate="fade-up" data-delay="100">
+          <div class="service-card__icon">⟨/⟩</div>
+          <h3 class="service-card__title">Web Development</h3>
+          <p class="service-card__desc">HTML, TAILWINDCSS, JavaScript, React, Angular ในขั้นพื้นฐานและพร้อมจะพัฒนาตัวเองอยู่เสมอ</p>
+          <span class="service-card__num">02</span>
+        </div>
+        <div class="service-card" data-animate="fade-up" data-delay="300">
+          <div class="service-card__icon">▶</div>
+          <h3 class="service-card__title">Motion Design</h3>
+          <p class="service-card__desc">เริ่มเรียนรู้การทำให้การเคลื่อนไหวต่างๆ ของเว็บไซต์ให้ดูน่าสนใจมากขึ้น</p>
+          <span class="service-card__num">03</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PORTFOLIO SECTION ─── -->
+  <section class="works section" id="works">
+    <div class="container">
+      <div class="works__header" data-animate="fade-up">
+        <div>
+          <div class="section-label">Portfolio</div>
+          <h2 class="section-title">MY PROJECTS.</h2>
+        </div>
+        <a href="#" class="btn btn--ghost">All Projects</a>
+      </div>
+
+      <div class="works__grid">
+        <div class="work-card" data-animate="fade-up" data-delay="100">
+          <div class="work-card__img">
+            <img src="https://cdn.phototourl.com/free/2026-03-26-a7127929-36ed-4002-873e-5d6c24499bb6.png" alt="Project 2" loading="lazy"/>
+            <div class="work-card__overlay">
+              <a class="work-card__link" href="https://piyapong9.github.io/itdormitory/" target="_blank" rel="noopener">View Project →</a>
+            </div>
+          </div>
+          <div class="work-card__info">
+            <span class="work-card__cat">Web Development</span>
+            <h3 class="work-card__title">DormBookingOnline</h3>
+          </div>
+        </div>
+
+        <div class="work-card" data-animate="fade-up" data-delay="200">
+          <div class="work-card__img">
+            <img src="https://cdn.phototourl.com/free/2026-03-26-6a2e1420-a4a6-459f-8b3c-253dd1c59781.png" alt="Project 3" loading="lazy"/>
+            <div class="work-card__overlay">
+              <a class="work-card__link" href="https://piyapong9.github.io/restaurant-wendemo/" target="_blank" rel="noopener">View Project →</a>
+            </div>
+          </div>
+          <div class="work-card__info">
+            <span class="work-card__cat">Web Development</span>
+            <h3 class="work-card__title">Restaurant Website</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT / CTA ─── -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact__inner" data-animate="fade-up">
+        <div class="contact__bg-text">PLEUM</div>
+        <div class="section-label">THANK YOU</div>
+        <h2 class="section-title contact__title">Thank You<br>for your attention. <span class="highlight">Let's talk.</span></h2>
+        <p class="contact__sub">นายปิยะพงษ์ ขาวประไพ ชื่อเล่น ปลื้ม รหัสนิสิต 6621601042</p>
+        <a href="mailto:piyapong.kao@ku.th" class="btn btn--primary btn--large">Send Me a Email</a>
+        <div class="contact__links">
+          <a href="#">Facebook</a>
+          <span>·</span>
+          <a href="#">Instagram</a>
+          <span>·</span>
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__logo"><span class="highlight">.</span>Pleum</span>
+      <span class="footer__copy">Piyapong Kaowprapai</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
