@@ -7,8 +7,8 @@
   --clr-bg: #0d0d0d;
   --clr-bg2: #141414;
   --clr-surface: #1a1a1a;
-  --clr-accent: #c8ff00;
-  --clr-accent2: #a3d900;
+  --clr-accent: #FF8A00;
+  --clr-accent2: #FF8A00;
   --clr-text: #f0f0f0;
   --clr-muted: #888;
   --clr-border: rgba(255,255,255,0.08);
@@ -51,7 +51,7 @@ a { text-decoration: none; color: inherit; }
 }
 .cursor-follower {
   width: 36px; height: 36px;
-  border: 1.5px solid rgba(200,255,0,0.5);
+  border: 1.5px solid rgba(255,138,0,0.5);
   transition: transform 0.18s ease, width 0.3s, height 0.3s, opacity 0.3s;
 }
 body:hover .cursor-follower { opacity: 1; }
@@ -117,9 +117,9 @@ body:hover .cursor-follower { opacity: 1; }
   color: #0d0d0d;
 }
 .btn--primary:hover {
-  background: #d6ff33;
+  background: #ffb84d;
   transform: translateY(-2px);
-  box-shadow: 0 12px 40px rgba(200,255,0,0.3);
+  box-shadow: 0 12px 40px rgba(255,138,0,0.3);
 }
 .btn--ghost {
   background: transparent;
@@ -141,8 +141,8 @@ body:hover .cursor-follower { opacity: 1; }
   animation: pulse 2s infinite;
 }
 @keyframes pulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(200,255,0, 0.4); }
-  50%       { box-shadow: 0 0 0 8px rgba(200,255,0, 0); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255,138,0, 0.4); }
+  50%       { box-shadow: 0 0 0 8px rgba(255,138,0, 0); }
 }
 
 /* ═══════════════════════════════════════════════
@@ -273,7 +273,7 @@ body:hover .cursor-follower { opacity: 1; }
 
 .hero__blob {
   width: 100%;
-  filter: drop-shadow(0 40px 80px rgba(200,255,0,0.12));
+  filter: drop-shadow(0 40px 80px rgba(255,138,0,0.12));
   animation: blobFloat 6s ease-in-out infinite;
 }
 
@@ -431,13 +431,13 @@ body:hover .cursor-follower { opacity: 1; }
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(200,255,0,0.04), transparent);
+  background: linear-gradient(135deg, rgba(255,138,0,0.04), transparent);
   opacity: 0;
   transition: opacity 0.4s;
 }
 .service-card:hover {
   transform: translateY(-8px);
-  border-color: rgba(200,255,0,0.25);
+  border-color: rgba(255,138,0,0.25);
 }
 .service-card:hover::before { opacity: 1; }
 
